@@ -4,7 +4,7 @@
 <head>
     <title> Assigenment 1</title>
     <style>
-        div {
+        .Square {
             width: 200px;
             height: 200px;
             position: absolute;
@@ -12,15 +12,29 @@
             left: 50px;
             top: 50px;
         }
+
+        .Square-red {
+            background-color: red;
+        }
+
+        .Square-blue {
+            background-color: blue;
+            margin: 35px;
+        }
+
+        .Square-yellow {
+            background-color: yellow;
+            margin: 70px;
+        }
     </style>
 </head>
 
 <body>
-    <div style="background-color:red;">
+    <div class="Square Square-red">
     </div>
-    <div style="background-color:blue;margin: 35px;">
+    <div class="Square Square-blue">
     </div>
-    <div style="background-color:yellow; margin: 70px;">
+    <div class="Square Square-yellow">
     </div>
 </body>
 
