@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Using JQuery -->
+
+<head>
+    <title>Assigenment 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#red_square , #blue_square , #yellow_square").addClass("Square");
+            $("#red_square ").addClass("Square-red");
+            $("#blue_square").addClass("Square-blue");
+            $("#yellow_square").addClass("Square-yellow");
+
+        }); 
+    </script>
+    <style>
+        /* Square style*/
+        .Square {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            padding-left: 50;
+            left: 50px;
+            top: 50px;
+            background-color: aqua;
+        }
+
+        .Square-red {
+            background-color: red;
+        }
+
+        .Square-blue {
+            background-color: blue;
+            margin: 35px;
+        }
+
+        .Square-yellow {
+            background-color: yellow;
+            margin: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red_square">
+    </div>
+    <div id="blue_square">
+    </div>
+    <div id="yellow_square">
+    </div>
+</body>
+
+</html>
