@@ -3,6 +3,13 @@
 
 <head>
     <title>Assigenment 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#containor").addClass("containor");
+            $("#Circle").addClass("Circle");
+        }); 
+    </script>
     <style>
         .containor {
             display: flex;
@@ -17,6 +24,7 @@
             border-radius: 50%;
             position: absolute;
             background-image: linear-gradient(red, violet, blue, cyan, green, orange, yellow, red);
+            /* Gradient color*/
             top: 50%;
             transform: translate(0, -50%);
             /* Center the shape vertically */
@@ -26,8 +34,8 @@
 </head>
 
 <body>
-    <div class="containor">
-        <div class="Circle"></div>
+    <div id="containor">
+        <canvas id="Circle"></canvas>
     </div>
 </body>
 
