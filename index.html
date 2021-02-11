@@ -2,41 +2,68 @@
 <html lang="en">
 
 <head>
-    <title>Assigenment 1</title>
+    <title>Home Dirctory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        /* Square style*/
-        .Square { 
-            
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            padding-left: 50;
-            left: 50px;
-            top: 50px;
-            
-        }
-
-        .Square-red {
-            background-color: red;
-        }
-
-        .Square-blue {
-            background-color: blue;
-            margin: 35px;
-            
-        }
-
-        .Square-yellow {
-            background-color: yellow;
-            margin: 70px;
+        button {
+            margin: 5px;
         }
     </style>
+    <script>
+        $(document).ready(function () {
+            $("button").hover(function () {
+                $(this).removeClass("btn-primary");
+                $(this).addClass("btn-success");
+                $(this).mouseleave(function () {
+                    $(this).removeClass("btn-success");
+                    $(this).addClass("btn-primary");
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div class="Square Square-red"></div>
-    <div class="Square Square-blue"></div>
-    <div class="Square Square-yellow"></div>
+
+    <div class="jumbotron text-center">
+        <h1>Home Dirctory</h1>
+        <p>Assignments page</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Assignment 1</h2>
+                <button onclick="location.href='Assingment 4.html'" type="button" class="btn btn-primary">first
+                    Assignment 1 method 1 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 1 method 2 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 1 method 3 </button>
+            </div>
+            <div class="col-sm-6">
+                <h2>Assignment 2</h2>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 2 method 1 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 2 method 2 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 2 method 3 </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Assignment 3</h2>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 1 method 1 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 1 method 2 </button>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 1 method 3 </button>
+            </div>
+            <div class="col-sm-6">
+                <h2>Assignment 4</h2>
+                <button onclick="" type="button" class="btn btn-primary">first Assignment 2 method 1 </button>
+            </div>
+        </div>
+
+
 </body>
 
 </html>
